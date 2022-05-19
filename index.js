@@ -9,7 +9,7 @@ app.listen(port, () => {
     console.log(`Nodemailer is listening at http://localhost:${port}`);
 });
 
-app.post('/send-email', function (req, res) {
+app.get('/', function (req, res) {
     res.end('{"success" : "Hello World", "status" : 200}');
 });
 app.post('/send-email', function (req, res) {
