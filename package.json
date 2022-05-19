@@ -1,0 +1,32 @@
+{
+  "name": "nodemailer",
+  "version": "1.0.0",
+  "description": "App to send email",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robinsonc/nodemailer.git"
+  },
+  "keywords": [
+    "send",
+    "email",
+    "using",
+    "node",
+    "email",
+    "api"
+  ],
+  "author": "robinson c",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/robinsonc/nodemailer/issues"
+  },
+  "homepage": "https://github.com/robinsonc/nodemailer#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "nodemailer": "^6.7.5"
+  }
+}
