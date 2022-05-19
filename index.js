@@ -9,7 +9,9 @@ app.listen(port, () => {
     console.log(`Nodemailer is listening at http://localhost:${port}`);
 });
 
-
+app.post('/send-email', function (req, res) {
+    res.end('{"success" : "Hello World", "status" : 200}');
+});
 app.post('/send-email', function (req, res) {
     let transporter = nodemailer.createTransport({
         service: 'gmail',
@@ -25,7 +27,7 @@ app.post('/send-email', function (req, res) {
 
     // console.log(req.body);
     let mailOptions = {
-        from:'wizroots@gmail.com',
+        from:process.env.FROM_EMAIL,
         to: req.body.to, // list of receivers
         subject: req.body.subject, // Subject line
         text: req.body.text, // plain text body
