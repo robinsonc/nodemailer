@@ -33,7 +33,7 @@ app.post('/send-email', function (req, res) {
         to: req.body.to, // list of receivers
         subject: req.body.subject, // Subject line
         text: req.body.text, // plain text body
-        // html: '<b>NodeJS Email Tutorial</b>' // html body
+        html: req.body.html // html body
     };
 
     transporter.sendMail(mailOptions, function(err, data) {
